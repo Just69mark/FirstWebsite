@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors and Typography - HTML and CSS Topics</title>
+    <link rel="stylesheet" type="text/css" href="css/css-colors-and-typography.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">My</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li class="current"><a href="portfolio.html" target="_blank">Portfolio</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="topic-content">
+        <div class="container">
+            <h1>Colors and Typography in CSS</h1>
+            
+            <h2>Colors in CSS</h2>
+            <p>Colors play a crucial role in web design. CSS provides several ways to specify colors:</p>
+
+            <h3>1. Color Keywords</h3>
+            <p>CSS provides a set of predefined color keywords.</p>
+            <div class="code-example">
+                <pre><code>
+color: red;
+background-color: blue;
+                </code></pre>
+            </div>
+
+            <h3>2. Hexadecimal Colors</h3>
+            <p>A six-digit code representing RGB values.</p>
+            <div class="code-example">
+                <pre><code>
+color: #FF0000; /* Red */
+background-color: #0000FF; /* Blue */
+                </code></pre>
+            </div>
+
+            <h3>3. RGB and RGBA</h3>
+            <p>RGB specifies Red, Green, and Blue values. RGBA adds an Alpha channel for opacity.</p>
+            <div class="code-example">
+                <pre><code>
+color: rgb(255, 0, 0); /* Red */
+background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent Blue */
+                </code></pre>
+            </div>
+
+            <h3>4. HSL and HSLA</h3>
+            <p>HSL specifies Hue, Saturation, and Lightness. HSLA adds an Alpha channel.</p>
+            <div class="code-example">
+                <pre><code>
+color: hsl(0, 100%, 50%); /* Red */
+background-color: hsla(240, 100%, 50%, 0.5); /* Semi-transparent Blue */
+                </code></pre>
+            </div>
+
+            <h3>Color Examples</h3>
+            <div class="color-example" style="background-color: #FF0000;">Red</div>
+            <div class="color-example" style="background-color: #00FF00;">Green</div>
+            <div class="color-example" style="background-color: #0000FF;">Blue</div>
+            <div class="color-example" style="background-color: rgba(255, 0, 0, 0.5);">Pale Red</div>
+
+            <h2>Typography in CSS</h2>
+            <p>Typography is the art of arranging type to make written language legible, readable, and appealing. CSS provides various properties to control typography:</p>
+
+            <h3>1. Font Family</h3>
+            <p>Specifies the font for an element.</p>
+            <div class="code-example">
+                <pre><code>
+font-family: Arial, sans-serif;
+                </code></pre>
+            </div>
+
+            <h3>2. Font Size</h3>
+            <p>Sets the size of the font.</p>
+            <div class="code-example">
+                <pre><code>
+font-size: 16px;
+font-size: 1.2em;
+font-size: 120%;
+                </code></pre>
+            </div>
+
+            <h3>3. Font Weight</h3>
+            <p>Sets how thick or thin characters in text should be displayed.</p>
+            <div class="code-example">
+                <pre><code>
+font-weight: bold;
+font-weight: 700;
+                </code></pre>
+            </div>
+
+            <h3>4. Text Alignment</h3>
+            <p>Sets the horizontal alignment of text.</p>
+            <div class="code-example">
+                <pre><code>
+text-align: center;
+text-align: justify;
+                </code></pre>
+            </div>
+
+            <h3>5. Line Height</h3>
+            <p>Sets the height of a line of text.</p>
+            <div class="code-example">
+                <pre><code>
+line-height: 1.6;
+                </code></pre>
+            </div>
+
+            <h3>Typography Examples</h3>
+            <div class="typography-example" style="font-family: Arial, sans-serif; font-size: 18px; font-weight: bold;">
+                This is Arial, 18px, bold.
+            </div>
+            <div class="typography-example" style="font-family: 'Times New Roman', serif; font-size: 16px; font-style: italic;">
+                This is Times New Roman, 16px, italic.
+            </div>
+            <div class="typography-example" style="font-family: Courier, monospace; font-size: 14px; text-align: center;">
+                This is Courier, 14px, center-aligned.
+            </div>
+
+            <p>Next topic: <a href="css-layout.html">CSS Layout</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Roluna's Portfolio, Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>

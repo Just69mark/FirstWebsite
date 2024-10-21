@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Elements - HTML and CSS Topics</title>
+    <link rel="stylesheet" type="text/css" href="css/html5-semantic-elements.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">My</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li class="current"><a href="portfolio.html" target="_blank">Portfolio</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="topic-content">
+        <div class="container">
+            <h1>HTML5 Semantic Elements</h1>
+            
+            <h2>What are Semantic Elements?</h2>
+            <p>Semantic elements are HTML elements that carry meaning about the structure of your web page. They clearly describe their meaning in a human- and machine-readable way. HTML5 introduced several new semantic elements to help structure your web pages better.</p>
+
+            <h2>Common HTML5 Semantic Elements</h2>
+            <ul>
+                <li><strong>&lt;header&gt;</strong>: Represents a container for introductory content or a set of navigational links.</li>
+                <li><strong>&lt;nav&gt;</strong>: Defines a set of navigation links.</li>
+                <li><strong>&lt;main&gt;</strong>: Specifies the main content of a document.</li>
+                <li><strong>&lt;article&gt;</strong>: Defines independent, self-contained content.</li>
+                <li><strong>&lt;section&gt;</strong>: Defines a section in a document.</li>
+                <li><strong>&lt;aside&gt;</strong>: Defines content aside from the page content (like a sidebar).</li>
+                <li><strong>&lt;footer&gt;</strong>: Defines a footer for a document or section.</li>
+            </ul>
+
+            <h2>Example: Using Semantic Elements</h2>
+            <div class="code-example">
+                <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Semantic HTML Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;My Website&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Article Title&lt;/h2&gt;
+            &lt;p&gt;This is the main content of the article.&lt;/p&gt;
+        &lt;/article&gt;
+
+        &lt;aside&gt;
+            &lt;h3&gt;Related Links&lt;/h3&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/aside&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 My Website. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+            </div>
+
+            <h2>Benefits of Using Semantic Elements</h2>
+            <ul>
+                <li>Improved accessibility for screen readers and other assistive technologies</li>
+                <li>Better SEO (Search Engine Optimization)</li>
+                <li>Easier to read and maintain code</li>
+                <li>More consistent structure across different websites</li>
+            </ul>
+
+            <p>Next topic: <a href="forms-and-input.html">Forms and Input</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Roluna's Portfolio, Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>

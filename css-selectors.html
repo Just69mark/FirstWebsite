@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors - HTML and CSS Topics</title>
+    <link rel="stylesheet" type="text/css" href="css/css-selectors.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">My</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li class="current"><a href="portfolio.html" target="_blank">Portfolio</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="topic-content">
+        <div class="container">
+            <h1>CSS Selectors</h1>
+
+            <h2>Introduction to CSS Selectors</h2>
+            <p>CSS selectors are patterns used to select and style HTML elements. They are a fundamental part of CSS and
+                allow you to apply styles to specific elements or groups of elements on your web page.</p>
+
+            <h2>Basic Selectors</h2>
+
+            <h3>1. Element Selector</h3>
+            <p>Selects all elements with the specified tag name.</p>
+            <div class="code-example">
+                <pre><code>
+p {
+    color: blue;
+}
+                </code></pre>
+            </div>
+
+            <h3>2. Class Selector</h3>
+            <p>Selects all elements with the specified class attribute.</p>
+            <div class="code-example">
+                <pre><code>
+.highlight {
+    background-color: yellow;
+}
+                </code></pre>
+            </div>
+
+            <h3>3. ID Selector</h3>
+            <p>Selects the element with the specified id attribute.</p>
+            <div class="code-example">
+                <pre><code>
+#header {
+    font-size: 24px;
+}
+                </code></pre>
+            </div>
+
+            <h2>Combinators</h2>
+
+            <h3>1. Descendant Selector</h3>
+            <p>Selects all elements that are descendants of a specified element.</p>
+            <div class="code-example">
+                <pre><code>
+div p {
+    margin-left: 20px;
+}
+                </code></pre>
+            </div>
+
+            <h3>2. Child Selector</h3>
+            <p>Selects all elements that are the immediate children of a specified element.</p>
+            <div class="code-example">
+                <pre><code>
+ul > li {
+    list-style-type: square;
+}
+                </code></pre>
+            </div>
+
+            <h2>Pseudo-classes and Pseudo-elements</h2>
+
+            <h3>1. Pseudo-class</h3>
+            <p>Selects elements based on a certain state.</p>
+            <div class="code-example">
+                <pre><code>
+a:hover {
+    color: red;
+}
+                </code></pre>
+            </div>
+
+            <h3>2. Pseudo-element</h3>
+            <p>Selects and styles a part of an element.</p>
+            <div class="code-example">
+                <pre><code>
+p::first-line {
+    font-weight: bold;
+}
+                </code></pre>
+            </div>
+
+            <h2>Attribute Selectors</h2>
+            <p>Selects elements based on their attributes or attribute values.</p>
+            <div class="code-example">
+                <pre><code>
+input[type="text"] {
+    border: 1px solid #ccc;
+}
+                </code></pre>
+            </div>
+
+            <p>next topic: <a href="css-box-model.html">CSS Box Model</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Roluna's Portfolio, Copyright &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

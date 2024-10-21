@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout - HTML and CSS Topics</title>
+    <link rel="stylesheet" type="text/css" href="css/css-layout.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">My</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li class="current"><a href="portfolio.html" target="_blank">Portfolio</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="topic-content">
+        <div class="container">
+            <h1>CSS Layout</h1>
+            
+            <h2>Introduction to CSS Layout</h2>
+            <p>CSS layout is about the arrangement of elements on a web page. It involves controlling how elements are positioned relative to the viewport and to each other.</p>
+
+            <h2>Key Concepts in CSS Layout</h2>
+
+            <h3>1. Display Property</h3>
+            <p>The <code>display</code> property specifies how an element should be displayed.</p>
+            <div class="code-example">
+                <pre><code>
+display: block;
+display: inline;
+display: inline-block;
+display: flex;
+display: grid;
+                </code></pre>
+            </div>
+
+            <h3>2. Position Property</h3>
+            <p>The <code>position</code> property specifies the type of positioning method used for an element.</p>
+            <div class="code-example">
+                <pre><code>
+position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;
+                </code></pre>
+            </div>
+
+            <h3>3. Float Property</h3>
+            <p>The <code>float</code> property is used for positioning and formatting content.</p>
+            <div class="code-example">
+                <pre><code>
+float: left;
+float: right;
+float: none;
+                </code></pre>
+            </div>
+
+            <h2>Layout Techniques</h2>
+
+            <h3>1. Flexbox</h3>
+            <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns.</p>
+            <div class="code-example">
+                <pre><code>
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+                </code></pre>
+            </div>
+            <div class="layout-example" style="display: flex; justify-content: space-between;">
+                <div>Flex Item 1</div>
+                <div>Flex Item 2</div>
+                <div>Flex Item 3</div>
+            </div>
+
+            <h3>2. CSS Grid</h3>
+            <p>CSS Grid is a two-dimensional layout system for the web.</p>
+            <div class="code-example">
+                <pre><code>
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+                </code></pre>
+            </div>
+            <div class="layout-example" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div>Grid Item 1</div>
+                <div>Grid Item 2</div>
+                <div>Grid Item 3</div>
+                <div>Grid Item 4</div>
+                <div>Grid Item 5</div>
+                <div>Grid Item 6</div>
+            </div>
+
+            <h3>3. Float Layout</h3>
+            <p>While less common in modern web design, float can still be useful for certain layouts.</p>
+            <div class="code-example">
+                <pre><code>
+.left {
+    float: left;
+    width: 50%;
+}
+.right {
+    float: right;
+    width: 50%;
+}
+                </code></pre>
+            </div>
+            <div class="layout-example">
+                <div style="float: left; width: 48%;">Left Column</div>
+                <div style="float: right; width: 48%;">Right Column</div>
+            </div>
+
+            <h2>Responsive Design</h2>
+            <p>Responsive design ensures that web pages render well on a variety of devices and window or screen sizes.</p>
+            <h3>Media Queries</h3>
+            <div class="code-example">
+                <pre><code>
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+                </code></pre>
+            </div>
+
+            <a href="html-css-topics.html">Back to Topics</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Roluna's Portfolio, Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model - HTML and CSS Topics</title>
+    <link rel="stylesheet" type="text/css" href="css/css-box-model.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">My</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li class="current"><a href="portfolio.html" target="_blank">Portfolio</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="topic-content">
+        <div class="container">
+            <h1>CSS Box Model</h1>
+            
+            <h2>Introduction to the Box Model</h2>
+            <p>The CSS Box Model is a fundamental concept in web design. It describes how elements are rendered on a web page, consisting of content, padding, border, and margin.</p>
+
+            <h2>Components of the Box Model</h2>
+            <ol>
+                <li><strong>Content:</strong> The actual content of the box, where text and images appear.</li>
+                <li><strong>Padding:</strong> Clears an area around the content. The padding is transparent.</li>
+                <li><strong>Border:</strong> A border that goes around the padding and content.</li>
+                <li><strong>Margin:</strong> Clears an area outside the border. The margin is transparent.</li>
+            </ol>
+
+            <h2>Box Model Example</h2>
+            <div class="box-model-example">
+                This is an example of the CSS Box Model. This div has a width of 300px, padding of 20px, a border of 5px, and a margin of 20px.
+            </div>
+
+            <h2>CSS for Box Model Properties</h2>
+            <div class="code-example">
+                <pre><code>
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #1abc9c;
+    margin: 20px;
+    background-color: #e0f2f1;
+}
+                </code></pre>
+            </div>
+
+            <h2>Box Sizing</h2>
+            <p>By default, the width and height properties in CSS define the size of the content box. This means padding and border are added to the specified width and height. To change this behavior, you can use the <code>box-sizing</code> property:</p>
+            <div class="code-example">
+                <pre><code>
+* {
+    box-sizing: border-box;
+}
+                </code></pre>
+            </div>
+            <p>With <code>box-sizing: border-box</code>, the padding and border are included in the element's total width and height.</p>
+
+            Next topic: <a href="css-colors-and-typography.html">Colors and Typography</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Roluna's Portfolio, Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>

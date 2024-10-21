@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #1abc9c 3px solid;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a {
+    color: #1abc9c;
+    font-weight: bold;
+}
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+#showcase {
+    min-height: 400px;
+    background: url('/images/Me/Graduation\ pic\ of\ me.jpg?height=100&width=1200') no-repeat center center/cover;
+    text-align: center;
+    color: #ffffff;
+}
+#showcase .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+#showcase h1 {
+    margin-top: 20px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p {
+    font-size: 20px;
+}
+footer {
+    padding: 40px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #1abc9c;
+    text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.multimedia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.multimedia-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+.multimedia-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.multimedia-item h3 {
+    margin-top: 10px;
+    color: #1abc9c;
+}
+.multimedia-item p {
+    margin: 10px 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
